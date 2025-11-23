@@ -1,0 +1,77 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-4 sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="/listings"><i class="fa-solid fa-house"></i></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+
+    <div class="search-box-inline">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" class="search-input" placeholder="Search listings...">
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="/listings">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/listings">All Listings</a>
+        </li>
+
+        <% if (!currentUser) { %>
+
+          <!-- If user is NOT logged in -->
+          <li class="nav-item">
+            <a class="nav-link" href="/login">Login</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/signup">Sign Up</a>
+          </li>
+
+        <% } else { %>
+
+          <!-- USER DROPDOWN -->
+          <li class="nav-item dropdown">
+            <a 
+              class="nav-link dropdown-toggle fw-bold"
+              href="#"
+              id="userDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              &#9787;Hello, <%= currentUser.username %>
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+
+              <li>
+                <a class="dropdown-item" href="/listings/new">
+                  Add Listing
+                </a>
+              </li>
+
+              <li><hr class="dropdown-divider"></li>
+
+              <li>
+                <a class="dropdown-item text-danger fw-bold" href="/logout">
+                  Logout
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        <% } %>
+
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,77 @@
+<% layout("/layouts/boilerplate")%>
+<body>
+<div class="edit-form">
+
+  <h2 class="text-center mb-4">Edit Listing</h2>
+
+  <form action="/listings/<%= listing._id %>?_method=PUT" method="POST">
+    
+    <!-- TITLE -->
+    <label>Title</label>
+    <input 
+      type="text"
+      class="form-control"
+      name="Listing[title]"
+      value="<%= listing.title %>"
+      required
+    >
+
+    <!-- DESCRIPTION -->
+    <label>Description</label>
+    <textarea 
+      class="form-control"
+      name="Listing[description]"
+      rows="3"
+      required
+    ><%= listing.description %></textarea>
+
+    <!-- IMAGE -->
+    <label>Image URL</label>
+    <input 
+      type="text"
+      class="form-control"
+      name="Listing[image]"
+      value="<%= listing.image %>"
+    >
+
+    <!-- PRICE -->
+    <label>Price (₹)</label>
+    <input 
+      type="number"
+      class="form-control"
+      name="Listing[price]"
+      value="<%= listing.price %>"
+      required
+    >
+
+    <!-- LOCATION -->
+    <label>Location</label>
+    <input 
+      type="text"
+      class="form-control"
+      name="Listing[location]"
+      value="<%= listing.location %>"
+      required
+    >
+
+    <!-- COUNTRY -->
+    <label>Country</label>
+    <input 
+      type="text"
+      class="form-control"
+      name="Listing[country]"
+      value="<%= listing.country %>"
+      required
+    >
+
+    <!-- BUTTON -->
+    <button type="submit" 
+    class="btn btn-success w-100 py-2 mt-3"
+    style="font-size: 1.1rem;">
+      Update Listing
+    </button>
+  </form>
+
+</div>
+</body>
+</html>

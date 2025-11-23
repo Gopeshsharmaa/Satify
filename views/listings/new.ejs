@@ -1,0 +1,91 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+
+<form action="/listings" method="POST" class="p-4 shadow-lg rounded bg-white" style="max-width: 600px; margin: auto;">
+
+  <!-- TITLE -->
+  <div class="form-group mb-3">
+    <label class="fw-bold">Title</label>
+    <input 
+      type="text" 
+      class="form-control" 
+      name="Listing[title]" 
+      placeholder="Enter room title"
+      required
+    >
+  </div>
+
+  <!-- DESCRIPTION -->
+  <div class="form-group mb-3">
+    <label class="fw-bold">Description</label>
+    <textarea 
+      class="form-control" 
+      name="Listing[description]" 
+      rows="3" 
+      placeholder="Write short description"
+      required
+    ></textarea>
+  </div>
+
+  <!-- IMAGE -->
+  <div class="form-group mb-3">
+    <label class="fw-bold">Image URL</label>
+    <input 
+      type="text" 
+      class="form-control" 
+      name="Listing[image]" 
+      placeholder="Paste image URL"
+    >
+    <small class="form-text text-muted">Leave empty to use default image.</small>
+  </div>
+
+  <!-- PRICE -->
+  <div class="form-group mb-3">
+    <label class="fw-bold">Price (₹)</label>
+    <input 
+      type="number" 
+      class="form-control" 
+      name="Listing[price]" 
+      placeholder="Enter price"
+      min="100"
+      required
+    >
+  </div>
+
+  <!-- LOCATION -->
+  <div class="form-group mb-3">
+    <label class="fw-bold">Location</label>
+    <input 
+      type="text" 
+      class="form-control" 
+      name="Listing[location]" 
+      placeholder="City or Area"
+      required
+    >
+  </div>
+
+  <!-- COUNTRY -->
+  <div class="form-group mb-3">
+    <label class="fw-bold">Country</label>
+    <input 
+      type="text" 
+      class="form-control" 
+      name="Listing[country]" 
+      placeholder="Enter country"
+      required
+    >
+  </div>
+
+  <!-- SUBMIT BUTTON -->
+  <button 
+    type="submit" 
+    class="btn btn-success w-100 py-2 mt-3"
+    style="font-size: 1.1rem;"
+  >
+    Add Listing
+  </button>
+
+</form>
+
+</body>
+</html>

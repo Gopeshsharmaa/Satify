@@ -1,0 +1,269 @@
+/* Navbar basic styling */
+.navbar {
+    background-color: #f8f9fa; /* light background */
+    padding: 0.6rem 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #0d6efd; /* blue */
+    font-size: 1.3rem;
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+}
+
+.nav-link {
+    margin-right: 1rem;
+    color: #495057;
+    font-size: 1rem;
+}
+
+.nav-link.active {
+    font-weight: 600;
+    color: #0d6efd;
+}
+
+.nav-link.btn-success {
+    padding: 0.3rem 0.8rem;
+    font-weight: 500;
+    border-radius: 0.25rem;
+}
+
+
+/* ---------------- Footer ---------------- */
+footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer a:hover {
+    color: #0d6efd;
+    text-decoration: underline;
+}
+
+footer p, footer li {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+footer i {
+    transition: transform 0.2s;
+}
+
+footer i:hover {
+    transform: scale(1.2);
+    color: #0d6efd;
+}
+
+
+
+
+/* ---------------- Card ---------------- */
+
+
+/* container */
+.listing-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+/* card */
+.listing-card {
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.listing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 30px rgba(0,0,0,0.2);
+}
+
+/* image */
+.listing-image-wrapper {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.listing-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.listing-card:hover .listing-image {
+    transform: scale(1.08);
+}
+
+/* content */
+.listing-content {
+    padding: 18px;
+}
+
+.listing-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.listing-price {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #080a08;
+    margin: 10px 0;
+}
+
+/* button */
+.listing-btn {
+    display: inline-block;
+    text-decoration: none;
+    background: linear-gradient(135deg, #6bef8c, #b2daa6);
+    padding: 10px 16px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.listing-btn:hover {
+    opacity: 0.85;
+    color: #080a08;
+}
+
+
+/* ---------------- Add New Listing From ---------------- */
+
+
+/* Add Listing Page */
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #eaeaea;
+    transition: 0.25s ease-in-out;
+}
+
+form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+/* Labels */
+form label {
+    font-weight: 600;
+    color: #333;
+}
+
+
+
+/* ---------------- Edit Listing From ---------------- */
+
+
+.edit-form {
+    max-width: 550px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  }
+
+  .edit-form input,
+  .edit-form textarea {
+    margin-bottom: 15px;
+  }
+
+  .edit-form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  .update-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.05rem;
+  }
+
+
+
+/* ---------------- Show ---------------- */
+
+
+
+  /* Page background */
+body {
+    background: #f5f7fa;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Card styling */
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Card image */
+.card-img-top {
+    transition: 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+    filter: brightness(85%);
+}
+
+/* Buttons */
+.btn {
+    font-weight: 500;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+.btn-danger:hover {
+    background-color: #bb2d3b;
+}
+
+/* List items */
+.list-group-item {
+    font-size: 0.95rem;
+    padding: 12px 16px;
+}
+
+/* Title */
+.card-title {
+    letter-spacing: 0.5px;
+}
+
+/* Card shadow */
+.card {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.review-card {
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+}
+.review-input {
+  max-width: 450px;
+  width: 100%;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
