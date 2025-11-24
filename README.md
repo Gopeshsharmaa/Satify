@@ -70,28 +70,6 @@ Git & GitHub
 
 GitHub Pages / Render / Vercel for deployment
 
----
-
-📁 Project Structure
-
-<h5>Stify/
-│── public/
-│   ├── css/
-│   ├── js/
-│   └── images/
-│
-│── views/
-│   ├── listings/
-│   ├── includes/
-│   ├── layouts/
-│   └── home.ejs
-│
-│── models/
-│── routes/
-│── app.js
-│── package.json
-│── README.md</h5>
-
 
 
 ---
