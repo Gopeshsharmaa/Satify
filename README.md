@@ -74,7 +74,7 @@ GitHub Pages / Render / Vercel for deployment
 
 📁 Project Structure
 
-Stify/
+<h5>Stify/
 │── public/
 │   ├── css/
 │   ├── js/
@@ -90,7 +90,7 @@ Stify/
 │── routes/
 │── app.js
 │── package.json
-│── README.md
+│── README.md</h5>
 
 
 
