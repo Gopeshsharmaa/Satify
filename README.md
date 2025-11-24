@@ -20,13 +20,12 @@ This README contains setup instructions, usage examples, and contribution guidan
 *(Edit the list to match Staify's actual features.)*
 
 ## Tech stack
-- Language: JavaScript / TypeScript (choose one)
-- Bundler: Vite / Webpack / Rollup (choose one)
-- Framework: (if any) — React / Svelte / Vue / none
+- Language: JavaScript
+- Bundler: Vite 
+- Framework: none
 - Node.js >= 14
-- Optional: CI (GitHub Actions), Netlify / Vercel for hosting
+- Optional: CI (GitHub Actions), Render for hosting
 
-## Getting started
 
 ### Prerequisites
 - Node.js (v14 or higher)
