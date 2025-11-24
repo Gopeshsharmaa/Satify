@@ -12,6 +12,12 @@ Built with clean UI, fast performance, and smooth navigation.
 
 ---
 
+Screenshots
+<img width="2160" height="1368" alt="image" src="https://github.com/user-attachments/assets/da5d3edb-2427-4f0b-9f47-424c11a5271c" />
+
+
+---
+
 ✨ Features
 🔍 For All Users
 
